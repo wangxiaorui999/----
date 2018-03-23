@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>电商首页</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=1080,target-densitydpi=device-dpi">
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet" />
+    <link href="css/Mofaxdxq.css" rel="stylesheet" />
+    <link href="css/Common.css?v=3" rel="stylesheet" />
+    <link href="css/style.css?v=8d9aag88" rel="stylesheet" />
+    <link href="css/studios.css?v=1ad21w" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/ShopSearch.css?v12w">
+    <link rel="stylesheet" href="css/CommodityZone.css">
+    <style>
+        body {
+            -webkit-overflow-scrolling: touch;
+            background-color: #fff;
+        }
+        .swiper-container1 .swiper-slide img{
+             width:1080px;
+             height:652px;
+             object-fit:cover;
+        }
+      
+    </style>
+    <script type="text/javascript">
+        !function (userAgent) {
+            var screen_w = parseInt(window.screen.width),
+                scale = screen_w / 1080;
+            if (/Android (\d+\.\d+)/.test(userAgent)) {
+                var version = parseFloat(RegExp.$1);
+                document.write(version > 2.3 ? '<meta name="viewport" content="width=1080, minimum-scale=' + scale + ', maximum-scale=' + scale + ', target-densitydpi=device-dpi">' : '<meta name="viewport" content="width=1080, target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=1080, minimum-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no, target-densitydpi=device-dpi">');
+            }
+        }(navigator.userAgent);
+
+    </script>
+</head>
+<body>
+    <div class="popWindow"
+         style="width:100%;height:100%;background:rgba(0,0,0,.6);position:fixed;z-index:999;display:none;">
+        <div class="w" style="position:relative;top:20%;width:800px;left:50%;margin-left:-400px;">
+            <img src="https://mall-res.manboker.com/newmall/CN/img/aa.png" style="position:absolute;width:100%;" />
+        </div>
+    </div>
+    <div class="shapCart" style="display:none;">
+        <img src="https://mall-res.manboker.com/newmall/CN/cart.png" />
+        <span>购物车</span>
+    </div>
+    <div class="GoTop">
+        <img src="https://mall-res.manboker.com/newmall/CN/top.png" />
+        <span>顶部</span>
+    </div>
+    <!--全部小店的头部导航-->
+
+
+
+    <div id="ShopIndex">
+        <!--顶部的搜索框    -->
+        <!--searchWrapper-->
+        <div class="Shop-nav-top" style="width: 100%">
+            <div class="Shop_ios_box" style="height: 68px; width: 100%;display: none"></div>
+            <div class="Shop-nav">
+                <!--<div class="return " style="display: block; color: rgb(0, 0, 0);"></div>-->
+                <div class="return">
+                </div>
+                <div class="ShopSearch">
+                    <form action="" class="shopsearch-form">
+                        <div class="shopsearch-form-box">
+                            <div class="shopsearch-form-action">
+                                <img src="https://mall-res.manboker.com/newmall/CN/goodsImg/search/search.png" alt=""
+                                     width="44" height="44">
+                            </div>
+                            <div class="shopsearch">
+                                <input type="search" class="shop-search-ipt" placeholder="输入画廊名字或商品名称">
+                            </div>
+                            <div class="shopsearch-mistake">
+                                <img src="https://mall-res.manboker.com/newmall/CN/goodsImg/search/close.png" alt=""
+                                     width="42" height="42">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="AllShop_fix" style="display: none">
+            <!--<div class="Shop_ios_box" style="height: 68px; width: 100%; display: block;"></div>-->
+            <!--<div class="AllShopTitle">-->
+            <!--全部小店-->
+            <!--</div>-->
+            <div class="dynr">
+                <!--==========魔法小店===============-->
+                <div class="mfxd">
+                    <div class="mfxd-top">
+                        <div class="zxxd">
+                            <ul class="select cl pos-r">
+                                <li class="ck li01">
+                                    <!--<span class="up  active   ">最新小店</span>-->
+                                    <span class="up  active   ">综合排序</span>
+                                    <ul class="second  hide">
+                                        <li class="cur  active   newpm" data-id="5">综合排序</li>
+                                        <li class="zxshop  newxshop" data-id="1">最新小店</li>
+                                        <li data-id="2" class="zxfb newfb">最新发布</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="xlyx tap" data-id="4">销量优先</div>
+                        <div class="hzs tap" data-id="3">获赞数</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--首页页面内容部分-->
+        <div id="xd_content">
+
+            <div class="Shop-banxin">
+
+                <div class="header">
+                    <div class="swiper-container swiper-container1">
+                        <div class="swiper-wrapper">
+                        </div>
+                        <div class="swiper-pagination swiper-pagination1"></div>
+                    </div>
+                </div>
+                <div class="allGoods">
+                    <div class="allGoodsBox">
+                        <ul class="goodsChoose">
+                            <li class="orange">全部商品</li>
+                            <li class="blue" name="中国国家图书馆">中国国家图书馆</li>
+                            <li class="gray" name="移动电源">移动电源</li>
+                            <li class="gray" name="精美包边抱枕">精美包边抱枕</li>
+                            <li class="red" name="小白手机壳">小白手机壳</li>
+                            <li class="gray" name="T恤">T恤</li>
+                            <li class="red" name="牛奶咖啡杯">牛奶咖啡杯</li>
+                            <li class="gray" name="晴雨伞">晴雨伞</li>
+                            <li class="gray" name="结婚纪念册">结婚纪念册</li>
+                            <li class="red" name="巧虎">巧虎</li>
+                            <li class="gray" name="U型枕">U型枕</li>
+                            <li class="gray" name="保温杯">保温杯</li>
+                            <li class="gray" name="鼠标垫">鼠标垫</li>
+                            <li class="blue" name="北欧简约抱枕">北欧简约抱枕</li>
+                            <li class="gray" name="拼图简版">拼图简版</li>
+                            <li class="gray" name="星座挂饰">星座挂饰</li>
+                            <li class="gray" name="牛奶罐">牛奶罐</li>
+                            <li class="blue" name="LED相框灯">LED相框灯</li>
+                            <li class="red" name="在一起杯">在一起杯</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="PartingLine"></div>
+
+                <!--------------------------------人气小店部分-------------------------------->
+                <div class="PopularShop " style="height: 180px">
+                    <div class="PopularShopicon">
+                        <img src="https://mall-res.manboker.com/newmall/CN/goodsImg/search/hot.png" alt="" width="110"
+                             height="110">
+                    </div>
+                    <span class="borderbgc"></span>
+                    <!--------------------在这里进行swiper------------------------------->
+                    <div class="PopularShopcontent">
+                        <div class="swiper-container4">
+                            <div class="swiper-wrapper">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="PartingLine"></div>
+                <div class="NewArrivals">
+                    <h3>新品推荐</h3>
+                    <div class="NewBox">
+                        <!-- .NewList的宽度根据商品的个数定义 688*n -->
+                        <div class="NewList" id="xpContainer">
+                        </div>
+                    </div>
+                </div>
+                <!-- 魔漫图商品专区   -->
+                <div class="CommodityZone">
+                    <div class="CommodityZoneTitle">
+                        魔漫图商品专区
+                    </div>
+
+                    <div class="CommodityZoneList">
+
+                    </div>
+                    <!-- 查看全部按钮 -->
+                    <div class="CommodityZoneGoodsViewAll">
+                        <div class="CommodityZoneGoodsBtn">
+                            查看全部
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--全部小店部分-->
+                <div class="AllShop">
+                    <div class="AllShopTitle">
+                        全部小店
+                    </div>
+                    <div class="dynr">
+                        <!--==========魔法小店===============-->
+                        <div class="mfxd">
+                            <div class="mfxd-top">
+                                <div class="zxxd">
+                                    <ul class="select cl pos-r">
+                                        <li class="ck li01">
+                                            <span class="up  active   ">综合排序</span>
+                                            <ul class="second  hide">
+                                                <li class="cur  active  newpm" data-id="5">综合排序</li>
+                                                <li class="zxshop  newxshop" data-id="1">最新小店</li>
+                                                <li data-id="2" class="zxfb newfb">最新发布</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="xlyx tap" data-id="4">销量优先</div>
+                                <div class="hzs tap" data-id="3">获赞数</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banxin">
+                        <div class="toptab  clearfix">
+                            <div class="znr1">
+                                <div class="mmscnr  tabcontent">
+                                </div>
+                                <!--下面的内容就是点击魔法小店时候的内容-->
+                                <div class="tabcontent  mfxd-content">
+                                    <!--下面是具体的内容-->
+                                    <div class="jtnr">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--这里是弹出框提示-->
+                        <div class="Prompt" style="display:none">
+                            没有更多数据了
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="search">
+        <div id="sc_shade">
+            <div class="loading">
+                <img id="l" src="https://mall-res.manboker.com/newmall/CN/goodsImg/search/spinner.gif">
+                <p>正在加载...</p>
+            </div>
+        </div>
+        <div class="navtop">
+            <div class="ios_box" style="height:68px;"></div>
+            <div class="nav">
+                <form action="" class="shopsearch-form">
+                    <div class="shopsearch-form-box">
+                        <div class="shopsearch-form-action">
+                            <img src="https://mall-res.manboker.com/newmall/CN/goodsImg/search/search.png" alt="" width="44"
+                                 height="44">
+                        </div>
+                        <div class="shopsearch">
+                            <input type="search" id="search_input" class="shop-search-ipt" placeholder="输入画廊名称或者商品名称">
+                        </div>
+                        <div class="shopsearch-mistake">
+                            <img src="https://mall-res.manboker.com/newmall/CN/goodsImg/search/close.png" alt="" width="42"
+                                 height="42">
+                        </div>
+                    </div>
+                </form>
+                <div class="shopCancel"><span>取消</span></div>
+            </div>
+
+            <div class="tabtitle">
+                <div class="titcontent">
+                    <em class="diyi  tabhover" style="color: #FA9C14">画廊</em>
+                    <em class="taba   dier">商品</em>
+                </div>
+
+            </div>
+        </div>
+        <div class="sc_main">
+            <div class="body">
+                <!--画廊内容-->
+                <div class="tabcontent  Gallery" style="display: none">
+
+                    <div class="SearchResult" style="display: none"></div>
+                    <!--热门搜索-->
+                    <div class="DefaultSearch" style="display: none">
+                        <div class="HotSearch">
+                            <span>热门搜索</span>
+                        </div>
+                        <div class="Specificot">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <!--搜索不到内容-->
+                    <div class="CannotSearch" style="display: none">
+                        <img src="https://mall-res.manboker.com/newmall/CN/goodsImg/search/template_cartoon.png" alt=""
+                             width="456" height="456">
+                        <p>搜索不到内容</p>
+                    </div>
+                </div>
+
+                <!--商品部分-->
+                <div class="tabcontent  commodity  clearfix" style="display:none">
+                    <div class="CommoditySection_box" style="display:none"></div>
+                    <!--热门搜索-->
+                    <div class="DefaultSearch" style="display: none">
+                        <div class="HotSearch">
+                            <span>热门搜索</span>
+                        </div>
+                        <div class="Specificot">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <!--搜索不到内容-->
+                    <div class="CannotSearch" style="display: none">
+                        <img src="https://mall-res.manboker.com/newmall/CN/goodsImg/search/template_cartoon.png" alt=""
+                             width="456" height="456">
+                        <p>搜索不到内容</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--点击魔漫商品专区-->
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://mall-res.manboker.com/lib/loading-fixed.js"></script>
+    <script src="http://mall-res.manboker.com/lib/handleUploadImg.js"></script>
+    <script src="https://mall-res.manboker.com/lib/mcJsApi.js?v=88"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+   <!--<script src="config-test.js"></script>-->
+    <script src="./config.js?v=a5412234"></script>
+    <script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+    <script src="js/Home.js?v=va1adsaad1s12"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/mofaxdxq.js?v=asd55"></script>
+    <script src="js/Popularhop.js?v12"></script>
+    <script src="js/HomeSwiper.js?v=a82"></script>
+    <script src='https://mall-res.manboker.com/lib/Counter.js' defer="defer" onload="goCounter()"></script>
+    <script src="https://mall-res.manboker.com/newmall/tingyun-rum.js"></script>
+    <script src="js/sousuo.js"></script>
+    <script>
+        function goCounter() {
+            Counter("新电商首页浏览");
+        }
+
+        if (!/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+            $(".MoreArrow").css("display", "inline-block");
+            $(".Shop-nav-top  .Shop_ios_box").css("display", "none");
+            document.getElementsByClassName("return")[0].className += " android";
+            $("#xd_content").css("paddingTop", "141px");
+            $(".AllShop_fix").css("top", "144")
+        } else {
+            $(".RightArrow").hide();
+            $(".MoreArrow").siblings("span").css("margin-right", "75px");
+            $(".Shop-nav-top  .Shop_ios_box").css("display", "block");
+            document.getElementsByClassName("return")[0].style.display = "block";
+            document.getElementsByClassName("return")[0].className += " Indexios";
+            $("#xd_content").css("paddingTop", "210px");
+            $(".AllShop_fix").css("top", "210px")
+        }
+
+
+
+        var name = '1';
+        console.log(app.urls.GetIndexBanner + '&title=' + name)
+
+    </script>
+</body>
+
+</html>

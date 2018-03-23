@@ -1,0 +1,105 @@
+/*ÇÉ»¢×¨Çø*/
+.IngeniousTigerArea p {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 29px;
+}
+
+.IngeniousTigerArea .two {
+    margin-left: 49px;
+}
+
+.IngeniousTigerArea .foot li img {
+    object-fit: cover;
+}
+
+
+.GoodsList .GoodsListRight .foot ul li {
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom:60px;
+}
+
+    .GoodsList .GoodsListRight .foot ul li img {
+        width: 100%;
+    }
+
+    /*.GoodsList .GoodsListRight .foot ul li .fire img {
+        width: 46px;
+        display:block;
+        position:absolute;
+        left:40px;
+    }*/
+
+
+.fire {
+    width:100%;
+    text-align:center;
+    display:block;
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    margin-top:8px;
+    font-size:0;
+}
+
+    .GoodsList .GoodsListRight .foot ul li .fire img {
+        width: 46px;
+        display:inline-block;
+        vertical-align:middle;
+        margin-right:16px;
+        position:relative;
+        margin-top:-10px;
+    }
+
+    .fire span {
+        display:inline-block;
+        vertical-align:middle;
+        font-size: 37px;
+        font-weight: 700;
+    }
+
+li {
+    list-style: none;
+}
+
+.GoodsList .GoodsListRight ul li .price {
+    color: #ff2a00;
+    margin-left: 0px;
+    line-height:4px;
+}
+
+.GoodsList .GoodsListRight .foot ul li p {
+    width: 100%;
+}
+.GoodsList .GoodsListRight .foot ul li p:nth-of-type(1){
+    font-size:26px;
+}
+.two {
+    margin-left: 34px;
+}
+
+.first { 
+    padding:0 16px;
+}
+
+.GoodsList .GoodsListRight ul li .zi {
+    margin-top: 16px;
+}
+
+
+.banner2 {
+    margin-bottom: 62px;
+}
+
+    .banner2 p {
+        color: #5c5c5c;
+        font-size: 30px;
+    }
+
+    .banner2 .first {
+        margin-top: 23px;
+    }
+
+

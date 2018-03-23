@@ -1,0 +1,174 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    width: 100%;
+    height:100%;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: "华文细黑","STXIHEI",Verdana,arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
+    color: #555; 
+    overflow-x:hidden;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color :rgba(0, 0, 0, 0);
+    background:#fff;
+    -webkit-transform: translateZ(0);
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+}
+a{
+    text-decoration:none;  
+    color:#555; 
+}
+img{
+    border:none;
+}
+
+.return{
+    position:absolute;
+    left:12px;
+    top:30px;
+    z-index:1000;
+    width: 120px;
+    height: 120px;
+}
+    .return.ios {
+        background-image: url(//mall-res.manboker.com/newmall/CN/goodsImg/Onlineretailers_back.png);
+    }
+
+    .return.android {
+        background-image: url('//mall-res.manboker.com/newmall/CN/returnA.png');
+    }
+.headerTop {
+    width: 100%;
+    height: 72px;
+    background: rgb(178, 178, 178);
+    display: none;
+}
+.box{
+    width: 100%;
+    height:100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-right:17px;
+}
+.contain{
+    width: 100%;
+    padding:120px 0 30px;
+    background:#fff;
+    overflow:hidden;
+    font-size:0;
+    padding-top:211px;
+}
+.contain .pic{
+    display:inline-block;
+    vertical-align:top;
+    width:43%;
+    background:#fff;
+    overflow:hidden;
+    margin-left:62px;
+}
+.contain >div a:nth-child(1){
+    float:left;
+    width:100%;
+    /*height:278px;*/
+    margin-top:20px;
+    position:relative;
+}
+.contain .pic a:nth-child(1) .tip{
+    position:absolute;
+    bottom:5px;
+    right:42px;
+    display:block;
+    width:130px;
+    z-index:2;
+    font-size:20px;
+    border-radius:50%;
+}
+.contain .pic a:nth-child(1) .tip1{
+    right:11px;
+}
+.contain .pic a:nth-child(1) .phone{
+    display:block;
+    width:90%;
+    height:auto;
+    margin:0 auto;
+    min-height:250px;
+}
+.contain .pic a:nth-child(2){
+    float:left;
+    width:100%;
+    text-align:center;
+    font-size:36px;
+    margin:20px auto 5px;
+}
+.contain .pic a:nth-child(3){
+    float:left;
+    width:100%;
+    text-align:center;
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.TitleBar{
+    width:100%;
+    height:211px;
+    font-size:46px;
+    text-align:center;
+    line-height:120px;
+    position:fixed;
+    z-index:999;
+    top:0;
+    /*display:none;*/
+    border-bottom:2px solid #ccc;
+    background:#fff;
+}
+.TitleBar span{
+    display:block;
+    width:100%;
+    height:168px;
+    line-height:168px;
+    background-color:#fff;
+}
+.oTitle {
+    width: 100%;
+    height: 168px;
+    line-height: 168px;
+    position: absolute;
+    left:0;
+    top:43px;
+    text-align: center;
+    font-size: 54px;
+    color: #444;
+    background: #fff;
+}
+.GoodsTitle{
+    display:inline-block;
+    vertical-align:top;
+    font-size:0;
+    width:100%;
+    height:60px;
+    padding-top:20px;
+    text-align:center;
+    border-top:1px solid #ccc;
+    font-family:"Myriad Pro";
+}
+.GoodsTitle span{
+    display:inline-block;
+    vertical-align:top;
+    text-align:center;
+}
+.GoodsTitle span:nth-child(1),.GoodsTitle span:nth-child(3){
+    width:60px;
+    height:1px;
+    background:#5f5f5f;
+    margin-top:30px;
+}
+.GoodsTitle span:nth-child(2){
+    font-size:30px;
+    color:#595959;
+    margin:0 15px;
+    margin-top:15px;
+}

@@ -1,0 +1,673 @@
+﻿::-webkit-scrollbar {
+    display: none;
+}
+
+.TitleBar {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    border-bottom: 2px solid #ccc;
+}
+
+.oTitle {
+    width: 100%;
+    height: 168px;
+    line-height: 168px;
+    position: relative;
+    text-align: center;
+    font-size: 0;
+    color: #444;
+    background: #fff;
+}
+
+    .oTitle span {
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        box-sizing: border-box;
+        font-size: 50px;
+    }
+
+        .oTitle span:nth-child(1) {
+            margin-right: 50px;
+        }
+
+        .oTitle span.activeOne {
+            border-bottom: 5px solid #fa9c14;
+        }
+
+/*.TitleBar .oTitle .return {
+    width: 51px;
+    height: 51px;
+    background-image: url(../img/fanhui.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    position: absolute;
+    left: 55px;
+    top: 66px;
+}*/
+
+.TitleBar .oTitle .search {
+    width: 120px;
+    height: 120px;
+    background-image: url(http://moman-res-ali.manboker.com/newmall/CN/Onlineretailers_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 24px;
+}
+
+/*.main1 {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*overflow-x: hidden;*/
+    /*overflow-y: scroll;*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+   .header1 {
+        width: 100%;
+        overflow: hidden;
+    }
+
+      .header1 img {
+            width: 100%;
+        }
+
+     .header1 .swiper-container1 {
+            height: 100%;
+        }
+
+ .NewArrivals {
+        width: 100%;
+        overflow: hidden;
+        padding-left: 22px;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+
+     .NewArrivals h3 {
+            font-size: 48px;
+            color: #181818;
+            margin: 48px 0;
+        }
+
+      .NewArrivals .NewBox {
+            width: 100%;
+            height: 673px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
+             .NewArrivals .NewBox .NewList {              
+                height: 100%;
+                font-size: 0;
+            }
+
+               .NewArrivals .NewBox .NewList .NewModel {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 668px;
+                    height: 662px;
+                    overflow: hidden;
+                    position: relative;
+                    /*background:red;*/
+                    margin-right: 20px;
+                    box-shadow:8px 8px 8px rgba(0,0,0,.1);
+                    border:1px solid #bfbfbf;
+                    
+                }
+             ._clickNewModel {
+                         width: 670px;
+                         height: 450px;
+                         position: relative;
+                         z-index: 9999999;
+                            }
+              .NewArrivals .NewBox .NewList .NewModel   .RightArrow{
+                    margin-left:15px;
+               }
+                .NewArrivals .NewBox .NewList .NewModel   .FootArrow{
+                    margin-left:16px;
+                    margin-top:0px
+               }
+                    .NewArrivals .NewBox .NewList .NewModel > img {
+                        display: block;
+                        width: 100%;
+                    }
+
+  .NewArrivals .NewBox .NewList .NewModel .DetailWords {
+           width: 100%;
+          overflow: hidden;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          padding: 30px 18px 22px 18px;
+          box-sizing: border-box;
+           background: rgba(255,255,255,.85);
+                    }
+ .NewArrivals .NewBox .NewList .NewModel .DetailWords .Detail {
+        width: 100%;
+       overflow: hidden;
+       margin-bottom: 18px;
+                        }
+
+                             .NewArrivals .NewBox .NewList .NewModel .DetailWords .Detail .DetailName {
+                                float: left;
+                                font-size: 0;
+                                 width:450px;
+                                 white-space:nowrap; 
+                                 text-overflow:ellipsis;
+                                  -o-text-overflow:ellipsis;
+                                   overflow:hidden;
+                                   margin-left: 20px;
+                                }
+
+                               .NewArrivals .NewBox .NewList .NewModel .DetailWords .Detail .DetailName span {
+                                   display: inline-block;
+                                 vertical-align: middle;
+                                  font-size: 48px;
+                                    color: #181818;
+                                max-width: 191px;
+                                overflow: hidden;
+                                 text-overflow: ellipsis;
+                                white-space: nowrap;
+                                text-align: left
+                                }
+                                .NewArrivals .NewBox .NewList .NewModel .DetailWords .Detail .DetailName span.CommodityCategory {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    font-size: 48px;
+                                    color: #181818;
+                                    max-width: 300px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    text-align: left;
+                                        }
+                                     .NewArrivals .NewBox .NewList .NewModel .DetailWords .Detail .DetailName span.line {
+                                        width: 2px;
+                                        height: 22px;
+                                        background: #4e4e4e;
+                                        margin: 0 14px;
+                                    }
+
+                          .NewArrivals .NewBox .NewList .NewModel .DetailWords .Detail .DetailPrice {
+                                float: right;
+                                height: 66px;
+                                line-height: 66px;
+                                font-size: 0;
+                            }
+
+                                 .NewArrivals .NewBox .NewList .NewModel .DetailWords .Detail .DetailPrice span {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    font-size: 40px;
+                                    color: #4e4e4e;
+                                     max-width: 350px;
+                                      text-overflow: ellipsis;
+                                      float: left;
+                                      white-space: nowrap;
+                                      overflow: hidden;
+                                }
+
+                                    .NewArrivals .NewBox .NewList .NewModel .DetailWords .Detail .DetailPrice span:nth-child(1) {
+                                        margin-right: 3px;
+                                    }
+
+                       .NewArrivals .NewBox .NewList .NewModel .DetailWords .Author {
+                            width: 100%;
+                            height: 68px;
+                            overflow: hidden;
+                            font-size: 0;
+                            line-height: 68px;
+                        }
+                             .Author > div {
+                        display:inline-block;
+                         width:500px
+                                }
+                                .NewArrivals .NewBox .NewList .NewModel .DetailWords .Author > div img[src=''] {
+                                             display: none;
+                        }
+                         .NewArrivals .NewBox .NewList .NewModel .DetailWords .Author img {
+                                display: inline-block;
+                                vertical-align: middle;
+                                width: 68px;
+                                height: 68px;
+                                margin-right: 18px;
+                                float: left;
+                                 margin-left: 20px;
+                                 display: inline-block;
+                                 border-radius: 68px;
+                            }
+
+                            .NewArrivals .NewBox .NewList .NewModel .DetailWords .Author > div  img {
+                                width:40px;
+                                height:40px;
+                                margin-left: 22px;
+                                margin-top:15px;
+                                }
+
+                             .NewArrivals .NewBox .NewList .NewModel .DetailWords .Author span {
+                                display: inline-block;
+                                vertical-align: middle;
+                                font-size: 34px;
+                                color: #4e4e4e;
+                               
+                            }
+
+    .PartingLine {
+        width: 100%;
+        height: 30px;
+        background: #f2f2f2;
+    }
+
+     .MyFollow {
+        width: 100%;
+        height: 200px;
+        font-size: 0;
+        overflow: hidden;
+    }
+
+         .MyFollow ul, .main .MyFollow ul li {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+            .MyFollow ul li .FollowPic {
+                display: inline-block;
+                vertical-align: middle;
+                width: 176px;
+                height: 100%;
+                overflow: hidden;
+            }
+
+             .MyFollow ul li .FollowPic img {
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    margin: 50px auto;
+                }
+
+             .MyFollow ul li .FollowIcon {
+                display: inline-block;
+                vertical-align: middle;
+                width: 178px;
+                height: 100%;
+                overflow: hidden;
+            }
+
+                 .MyFollow ul li .FollowIcon img {
+                    display: block;
+                    width: 118px;
+                    height: 118px;
+                    margin: 41px auto;
+                    /*border:1px solid #bfbfbf;*/
+                    box-sizing: border-box;
+                }
+
+           .MyFollow ul li .line {
+                display: inline-block;
+                vertical-align: middle;
+                width: 1px;
+                height: 80px;
+                background: #333;
+            }
+
+           .MyFollow ul li .FollowName {
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 200px;
+                height: 100%;
+                overflow: hidden;
+            }
+
+                .MyFollow ul li .FollowName span {
+                    font-size: 42px;
+                    color: #fa9c14;
+                }
+
+                    .MyFollow ul li .FollowName span.Name {
+                        color: #4e4e4e;
+                        margin-right: 15px;
+                    }
+
+            .MyFollow ul li .ShowPic {
+                float: right;
+                margin-right: 30px;
+                width: 140px;
+                height: 100%;
+                overflow: hidden;
+            }
+
+              .MyFollow ul li .ShowPic img {
+                    display: block;
+                    width: 140px;
+                    height: 140px;
+                    margin: 30px auto;
+                }
+
+     .BoutiqueStudio {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+        .BoutiqueStudio h3 {
+            margin: 48px 0 84px;
+            font-size: 48px;
+            color: #181818;
+        }
+
+       .BoutiqueStudio .SeeAll {
+            position: absolute;
+            right: 30px;
+            top: 56px;
+            font-size: 0;
+        }
+
+           .BoutiqueStudio .SeeAll span {
+                font-size: 36px;
+                color: #959595;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+             .BoutiqueStudio .SeeAll span:nth-child(2) {
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-left: 15px;
+                    height: 49px;
+                    width: 30px;
+                    /*background:red;*/
+                }
+
+     .BoutiqueStudio .StuiodList {
+            width: 100%;
+            overflow: hidden;
+        }
+
+           .BoutiqueStudio .StuiodList .Studio {
+                width: 100%;
+                overflow: hidden;
+            }
+
+                .BoutiqueStudio .StuiodList .Studio .StudioAuthor {
+                    width: 100%;
+                    overflow: hidden;
+                    font-size: 0;
+                }
+
+                  .BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorIcon {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 118px;
+                        height: 118px;
+                        margin-right: 20px;
+                        border-color: 118px;
+                    }
+
+                       .BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorIcon img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                  .BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorWords {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+
+                      .BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorWords .StudioAuthorName {
+                            font-size: 40px;
+                            color: #4e4e4e;
+                            /*margin-bottom: 7px;*/
+                            display:inline-block;
+                            margin-right:4px;
+                            height:55px;
+                            line-height:55px;
+                        }
+
+                        .BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorWords .StudioAuthorDetail {
+                                font-size: 32px;
+                                 color: #959595;
+                                max-width: 600px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                text-align: left;
+                            position: absolute;
+                        }
+                         .BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorWords  img{
+                              margin-left:14px;
+                              margin-top:10px
+                         }
+
+                  .BoutiqueStudio .StuiodList .Studio .StudioAuthor .FollowBtn {
+                        height: 75px;
+                        line-height: 75px;
+                        font-size: 32px;
+                        color: #fa9c14;
+                        padding: 0 35px;
+                        border: 2px solid #fa9c14;
+                        float: right;
+                        margin-top: 20px;
+                        border-radius: 38px;
+                    }
+
+           .BoutiqueStudio .StuiodList .Studio .StudioPicList {
+                    width: 100%;
+                    height: 678px;
+                    overflow: hidden;
+                    margin: 20px 0 84px;
+                    font-size: 0;
+                    overflow: hidden;
+                }
+
+                  .BoutiqueStudio .StuiodList .Studio .StudioPicList .StudioPicListLeft {
+                        display: inline-block;
+                        width: 678px;
+                        height: 678px;
+                        margin-right: 6px;
+                    }
+
+                  .BoutiqueStudio .StuiodList .Studio .StudioPicList .StudioPicListLeft img {
+                            display: block;
+                            width: 676px;
+                            height: 676px;
+                            border: 1px solid #bfbfbf;
+                        }
+
+                   .BoutiqueStudio .StuiodList .Studio .StudioPicList .StudioPicListRight {
+                        display: inline-block;
+                        width: 336px;
+                        height: 678px;
+                    }
+
+                      .BoutiqueStudio .StuiodList .Studio .StudioPicList .StudioPicListRight img {
+                            display: block;
+                            width: 334px;
+                            height: 334px;
+                            border: 1px solid #bfbfbf;
+                            margin-bottom: 6px;
+                        }
+
+                            .BoutiqueStudio .StuiodList .Studio .StudioPicList .StudioPicListRight img:last-child {
+                                margin: 0;
+                            }
+
+
+
+
+
+    .LookAll {
+        margin: 0px auto 80px;
+        font-size: 0;
+        height: 50px;
+        text-align: center;
+            margin-top: 0;
+    }
+
+     .LookAll span {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 40px;
+            color: #4e4e4e;
+        }
+
+           .LookAll span:nth-child(2) {
+                display: inline-block;
+                vertical-align: middle;
+                width: 50px;
+                height: 50px;
+                /*background:red;*/
+                margin-left: 16px;
+                    margin-top: 5px;
+            }
+
+.swiper-container2 {
+    height: 100%;
+}
+
+ .BoutiqueStudio .StuiodList .Studio .StudioPicList .StudioPicListLeft .yidt {
+    width: 1020px;
+}
+
+.Studioertu-left {
+    display: inline-block;
+    width: 506px;
+    height: 678px;
+    margin-right: 8px;
+}
+.Studioertu-right {
+   display: inline-block;
+    width: 506px;
+    height: 678px;
+}
+    /*.Studioertu-left img, .Studioertu-right img {
+        width: 510px;
+        height: 678px;
+    }*/
+
+.Studio .waiting, .NewList .waiting {
+    width: 100%;
+    overflow: hidden;
+}
+
+    .Studio .waiting img {
+        display: block;
+        width: 60px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+
+    .NewList .waiting img {
+        padding: 269px 0;
+        position: relative;
+        left: 490px;
+        top: 28px;
+        width: 68px;
+    }
+
+ .BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorIcon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 118px;
+}
+
+
+img[src=''] 
+{
+  display: none;
+}
+/*.StudioAuthor .StudioAuthorWords  .StudioAuthorName {
+      width:420px;
+      white-space:nowrap; 
+      text-overflow:ellipsis;
+       -o-text-overflow:ellipsis;
+        overflow:hidden
+
+}*/
+ .StudioAuthor .StudioAuthorWords  .StudioAuthorName  .StudioAuthorDetail{
+       width:600px;
+      white-space:nowrap; 
+      text-overflow:ellipsis;
+       -o-text-overflow:ellipsis;
+        overflow:hidden
+ }
+.Detail .DetailName  .GoodsName {
+      width:351px;
+      white-space:nowrap; 
+      text-overflow:ellipsis;
+       -o-text-overflow:ellipsis;
+        overflow:hidden
+            
+}
+
+
+ 
+
+
+  
+
+      .NewArrivals .NewBox .NewList .NewModel .DetailWords .Author > div img[src='']
+{
+  display: none;
+}   
+
+
+
+.BoutiqueStudio .StuiodList .Studio .StudioPicList .StudioPicListRight > div {
+    display: block;
+    width: 334px;
+    height: 334px;
+    border: 1px solid #bfbfbf;
+    margin-bottom: 6px;
+}
+
+    
+
+ .BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorWords  .CertifiedType,
+ .BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorWords  .IsArtist{
+        margin-left:4px;
+        margin-top:0px;
+        margin-right:4px;
+        width:40px;
+        height:40px;
+         align-items:center ;
+        -webkit-align-items:center;
+        vertical-align:middle;
+}
+ .BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorWords .isoffocial {
+    margin-left:4px;
+    margin-right:8px;
+    height: 30px;
+    line-height:30px;
+    font-size: 30px;
+    color: #fa9c14;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+    border-radius: 22px;
+    background:#FFEBD0;
+    padding:6px 20px;
+    display: inline-block;
+    text-align:center;
+}
+ .BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorWords > div{
+    display:flex;
+    align-items: center;
+    -webkit-align-items:center;
+    vertical-align:middle;
+    margin-bottom: 7px;
+}

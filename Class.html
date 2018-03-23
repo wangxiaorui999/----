@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>分类</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=1080,target-densitydpi=device-dpi">
+    <link href="https://mall-res.manboker.com/newmall/CN/css/Common.css" rel="stylesheet" />
+    <link href="https://mall-res.manboker.com/newmall/CN/css/style.css?v=88dac76" rel="stylesheet" />
+    <link href="https://mall-res.manboker.com/newmall/CN/css/qiaohu.css?v=88cdac76" rel="stylesheet" />
+    <script type="text/javascript">
+        ! function (userAgent) {
+            var screen_w = parseInt(window.screen.width),
+                scale = screen_w / 1080;
+            if (/Android (\d+\.\d+)/.test(userAgent)) {
+                var version = parseFloat(RegExp.$1);
+                document.write(version > 2.3 ? '<meta name="viewport" content="width=1080, minimum-scale=' + scale + ', maximum-scale=' + scale + ', target-densitydpi=device-dpi">' : '<meta name="viewport" content="width=1080, target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=1080, minimum-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no, target-densitydpi=device-dpi">');
+            }
+        }(navigator.userAgent);
+    </script>
+</head>
+<body>
+    <div class="ClassBox" style="display:block;">
+        <div class="ClassTitle">
+            <div class="headerTop"></div>
+            <div class="oTitle">
+                分类
+                <div class="returnHome"></div>
+            </div>
+        </div>
+        <div class="GoodsList">
+            <script>
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                    document.getElementsByClassName("oTitle")[0].style.display = "block";
+                    document.getElementsByClassName("returnHome")[0].className += " ios";
+                } else {
+                    document.getElementsByClassName("ClassTitle")[0].style.height = "170px";
+                    document.getElementsByClassName("oTitle")[0].style.top = "0";
+                    document.getElementsByClassName("ClassBox")[0].style.paddingTop = "170px";
+                    document.getElementsByClassName("returnHome")[0].className += " android";
+                    document.getElementsByClassName("oTitle")[0].style.textAlign = "left";
+                    document.getElementsByClassName("oTitle")[0].style.textIndent = "216px";
+                }
+            </script>
+            <div class="GoodsListLeft">
+                <ul>
+                    <li class="active" name="Home"><span></span>家居</li>
+                    <li name="Digital"><span></span>数码3c</li>
+                    <li name="Gift"><span></span>文具玩具</li>
+                    <li name="Mugs"><span></span>餐饮用具</li>
+                    <li name="Cloth"><span></span>服饰箱包</li>
+                    <li name="Photo"><span></span>绘本相册</li>
+                    <li name="Pendant"><span></span>饰品</li>
+                    <li name="Calendar"><span></span>创意新奇特</li>
+                    <li name="Brand"><span></span>品牌专区</li>
+                    <li class="IngeniousTigerArea" name="IngeniousTigerArea"><span></span>巧虎专区</li>
+
+                </ul>
+            </div>
+            <div class="GoodsListRight">
+                <ul style="display:block"></ul>
+                <div class="IngeniousTigerAreaContent" style="display:none">
+                    <div class="banner2">
+                        <img src="https://mall-res.manboker.com/newmall/GoodsBox/qiaohu/banner2.jpg" alt="Alternate Text" width="780" />
+                        <p class="first"> * 此部分商品仅限参与巧虎活动"爱不缺席照相馆"的用户凭优惠码兑换使用，不对外发售</p>
+                    </div>
+                    <div class="foot">
+                        <ul></ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://mall-res.manboker.com/lib/mcJsApi.js?v=88"></script>
+    <script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+    <script src="https://mall-res.manboker.com/lib/config.js?v=2a3"></script>
+    <script src="js/Product.js?v=h07"></script>
+    <script src="js/Category.js?v=wdad3a1"></script>
+    <script src='https://mall-res.manboker.com/lib/Counter.js' defer="defer" onload="goCounter()"></script>
+    <script src="https://mall-res.manboker.com/newmall/tingyun-rum.js"></script>
+    <script>
+        function goCounter() {
+            Counter("新电商分类浏览");
+        }
+    </script>
+</body>
+</html>

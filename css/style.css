@@ -1,0 +1,1000 @@
+﻿.AllShop_fix{
+    position: fixed;
+    left: 0px;
+    top: 143px;
+    width: 100%;
+    z-index: -1;
+    display: none;
+    background-color: #fff;
+}
+.AllShop .AllShopTitle {
+    height: 168px;
+    line-height: 168px;
+    font-size: 54px;
+    margin-left: 20px;
+}
+.Indexios{
+    background-image: url(//mall-res.manboker.com/newmall/CN/Onlineretailers_back.png);
+
+}
+.AllShop_fix .AllShopTitle {
+    height: 168px;
+    line-height: 168px;
+    font-size: 54px;
+    margin-left: 20px;
+    background-color: #fff;
+    z-index: 999999;
+}
+
+.mfxd-top {
+    position: relative;
+}
+.Shop-nav-top{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+
+.Shop-nav-top .Shop-nav {
+    overflow: hidden;
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    z-index: 999;
+    width: 100%;
+    height: 96px;
+    border-radius: 8px;
+    border: none;
+    margin: 0 auto;
+    padding: 23px 0;
+    background-color: #fff;
+    z-index: 99999;
+    position: relative;
+}
+
+.Shop-nav-top .Shop-nav .return {
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+}
+
+.Shop-nav-top .Shop-nav .ShopSearch {
+    margin-left: 143px;
+    margin-right: 45px;
+}
+
+.Shop-nav-top .Shop-nav .ShopSearch .shopsearch-form-box {
+    height: 96px;
+    border-radius: 8px;
+    position: relative;
+    background-color: #f2f2f2;
+}
+
+.Shop-nav-top .Shop-nav .ShopSearch .shopsearch-form-box .shopsearch-form-action {
+    position: absolute;
+    left: 22px;
+    top: 26px;
+    vertical-align: top;
+    width: 44px;
+    height: 44px;
+}
+
+.Shop-nav-top .Shop-nav .ShopSearch .shopsearch-form-box .shopsearch {
+    position: absolute;
+    left: 88px;
+    top: 0px;
+    height: 94px;
+    border: none;
+}
+
+.Shop-nav-top .Shop-nav .ShopSearch .shopsearch-form-box .shopsearch .shop-search-ipt {
+    font-size: 40px;
+    color: #5F646E;
+    width: 787px;
+    border: none;
+    background-color: #f2f2f2;
+    outline: none;
+    height: 94px;
+    line-height: 94px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    resize: none;
+}
+
+.Shop-nav-top .Shop-nav .ShopSearch .shopsearch-form-box .shopsearch-mistake {
+    display: none;
+    position: absolute;
+    right: 28px;
+    top: 26px;
+    width: 42px;
+    height: 42px;
+}
+
+.Shop-banxin {
+    overflow: scroll;
+    position: relative;
+}
+
+.ios {
+    background-image: url(//mall-res.manboker.com/newmall/CN/Onlineretailers_back.png);
+}
+
+.android {
+    background-image: url(//mall-res.manboker.com/newmall/CN/returnA.png);
+}
+
+.Shop-nav-top {
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    background-color: #fff;
+    z-index: 9999;
+}
+
+#ShopIndex {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.GoTop, .shapCart {
+    width: 126px;
+    height: 126px;
+    position: fixed;
+    right: 60px;
+    bottom: 0;
+    z-index: 99999;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .6);
+    display: none;
+}
+
+.GoTop img, .shapCart img {
+    display: block;
+    margin: 10px auto 8px;
+}
+
+.GoTop span, .shapCart span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.shapCart {
+    display: block;
+    bottom: 200px;
+}
+
+@keyframes Up {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, -200px, 0);
+    }
+}
+
+@-webkit-keyframes Up {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, -200px, 0);
+    }
+}
+
+@keyframes Down {
+    from {
+        transform: translate3d(0, -200px, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes Down {
+    from {
+        -webkit-transform: translate3d(0, -200px, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+.goUp {
+    -webkit-animation: Up 0.5s ease-in;
+    animation: Up 0.5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.goDown {
+    -webkit-animation: Down 0.5s ease-in;
+    animation: Down 0.5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes CartUp {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, -50px, 0);
+    }
+}
+
+@-webkit-keyframes CartUp {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, -50px, 0);
+    }
+}
+
+@keyframes CartDown {
+    from {
+        transform: translate3d(0, -50px, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes CartDown {
+    from {
+        -webkit-transform: translate3d(0, -50px, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+.CartUp {
+    -webkit-animation: Up 0.5s ease-in;
+    animation: CartUp 0.5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.CartDown {
+    -webkit-animation: Down 0.5s ease-in;
+    animation: CartDown 0.5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.TitleBar, .ClassTitle {
+    width: 100%;
+    height: 211px;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ccc;
+    background: #fff;
+}
+
+.oTitle {
+    width: 100%;
+    height: 168px;
+    line-height: 168px;
+    position: absolute;
+    left: 0;
+    top: 41px;
+    text-align: center;
+    font-size: 54px;
+    color: #444;
+    background: #fff;
+}
+
+.TitleBar .oTitle .return, .returnHome {
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 12px;
+    top: 30px;
+}
+
+.TitleBar .oTitle .return.ios {
+    background-image: url(//mall-res.manboker.com/newmall/CN/Onlineretailers_back.png);
+}
+
+.TitleBar .oTitle .return.android {
+    background-image: url('//mall-res.manboker.com/newmall/CN/returnA.png');
+}
+
+.returnHome.ios {
+    background-image: url(//mall-res.manboker.com/newmall/CN/goodsImg/Onlineretailers_back.png);
+}
+
+.returnHome.android {
+    background-image: url('//mall-res.manboker.com/newmall/CN/returnA.png');
+}
+
+/*.main {*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*overflow-x: hidden;*/
+/*overflow-y: scroll;*/
+/*box-sizing: border-box;*/
+/*!*padding-top: 211px;*!*/
+/*}*/
+
+.header {
+    width: 100%;
+    position: relative;
+}
+
+/*头部轮播图样式*/
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-container img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+}
+
+/*热卖样式*/
+.hot {
+    width: 100%;
+}
+
+.hot, .hot .headHot {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hot .headHot h3 {
+    margin: 32px 0 30px;
+    font-size: 45px;
+    color: #000;
+    text-indent: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.hot .headHot p {
+    margin: 0 0 23px 50px;
+    font-size: 30px;
+    color: #a3a4a8;
+}
+
+.hot .headHot .MoreBtn {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    right: -32px;
+    top: 33px;
+    margin-right: 50px;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.hot .headHot .MoreBtn span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 42px;
+    color: #999;
+    margin-right: 12px;
+}
+
+.hot .headHot .MoreBtn img {
+    display: none;
+    vertical-align: middle;
+}
+
+.hot .hotList {
+    width: 100%;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.hot .hotList .waiting {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hot .hotList .waiting img {
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    padding: 100px 0
+}
+
+.hot .hotList .hotDetail {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dfdfdf;
+    position: relative;
+}
+
+.hot .hotList .hotDetail:nth-child(2n+1) {
+    border-right: 1px solid #dfdfdf;
+}
+
+.hot .hotList .hotDetail .hotPic {
+    width: 440px;
+    margin: 0 auto;
+}
+
+.hot .hotList .hotDetail .hotPic img.icon {
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    right: -18px;
+    top: 57px;
+    border-radius: 50%;
+}
+
+.goodsBox {
+    width: 375px;
+    height: 375px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.hot .hotList .hotDetail .hotPic img.hotGoodPic {
+    width: 380px;
+    height: 380px;
+    object-fit: contain;
+}
+
+.hot .hotList .hotDetail .goodsName {
+    font-size: 42px;
+    margin-top: 38px;
+    color: #000;
+    text-align: center;
+}
+
+.hot .hotList .hotDetail .goodsName img {
+    position: relative;
+    left: -16px;
+    vertical-align: middle;
+}
+
+.hot .hotList .hotDetail .goodsNameDetail {
+    font-size: 36px;
+    margin-top: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.hot .hotList .hotDetail .Price {
+    font-size: 42px;
+    color: #ff452c;
+    text-align: center;
+    margin: 14px 0 25px;
+}
+
+/*创趣大赛样式*/
+.mall {
+    width: 100%;
+    /*overflow:hidden;*/
+}
+
+.mall .mallLogo {
+    width: 100%;
+}
+
+.mall .mallLogo img {
+    display: block;
+    width: 100%;
+}
+
+.mall .mallGoodsList {
+    width: 100%;
+    background: #FfEECC;
+    overflow: hidden;
+    padding: 20px 0 40px;
+    box-sizing: border-box;
+    font-size: 0;
+    text-align: center;
+}
+
+.mall .mallGoodsList .mallGoods {
+    display: inline-block;
+    vertical-align: top;
+    width: 480px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.mall .mallGoodsList .mallGoods:nth-child(2n+1) {
+    margin-right: 24px;
+}
+
+.mall .mallGoodsList .mallGoods .mallGoodsPic {
+    width: 100%;
+    /*height:550px;*/
+    overflow: hidden;
+}
+
+.mall .mallGoodsList .mallGoods .mallGoodsPic img {
+    display: block;
+    width: 100%;
+}
+
+.mall .mallGoodsList .mallGoods h3 {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: normal;
+    color: #000;
+    margin: 40px 0 16px;
+    font-size: 42px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mall .mallGoodsList .mallGoods .authorInfo {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mall .mallGoodsList .mallGoods .authorInfo img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.mall .mallGoodsList .mallGoods .authorInfo span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 36px;
+    color: #5f646e;
+    line-height: 40px;
+}
+
+/*分类样式*/
+.ClassBox {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    display: none;
+    padding-top: 211px;
+}
+
+.GoodsList {
+    width: 100%;
+    overflow: hidden;
+}
+
+.GoodsList .GoodsListLeft {
+    float: left;
+    width: 300px;
+    height: 100%;
+    background: #f2f2f2;
+}
+
+.GoodsList .GoodsListLeft ul {
+    width: 100%;
+    overflow: hidden;
+}
+
+.GoodsList .GoodsListLeft ul li {
+    list-style: none;
+    width: 100%;
+    height: 130px;
+    position: relative;
+    font-size: 48px;
+    color: #000;
+    text-align: center;
+    line-height: 130px;
+}
+
+.GoodsList .GoodsListLeft ul li.active {
+    background: #fff;
+}
+
+.GoodsList .GoodsListLeft ul li.active span {
+    display: none;
+}
+
+.GoodsList .GoodsListLeft ul li span {
+    width: 12px;
+    height: 60px;
+    background: #fa9c14;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    display: none;
+}
+
+.GoodsList .GoodsListRight {
+    float: left;
+    width: 780px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.GoodsList .GoodsListRight ul {
+    width: 100%;
+    padding: 0 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+.GoodsList .GoodsListRight ul li {
+    width: 240px;
+    overflow: hidden;
+    margin-top: 38px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.GoodsList .GoodsListRight ul li img {
+    display: block;
+    margin: 0 auto;
+}
+
+.GoodsList .GoodsListRight ul li p {
+    text-align: center;
+    font-size: 34px;
+    color: #5f646e;
+    margin: 36px 0;
+}
+
+.allGoodsLine {
+    width: 100%;
+    height: 20px;
+    background: #f2f2f2;
+}
+
+.allGoods {
+    width: 100%;
+    height: auto;
+    padding: 39px 0px;
+    box-sizing: border-box;
+}
+
+.allGoodsBox {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.allGoods .goodsChoose {
+   width: 2480px;
+    overflow: hidden;
+    margin-left: 35px;
+}
+
+.allGoods .goodsChoose li {
+    float: left;
+    margin: 15px;
+    list-style: none;
+    padding: 24px 30px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.allGoods .goodsChoose li.orange {
+    border: 2px solid #ec9e43;
+    color: #ec9e43;
+}
+
+.allGoods .goodsChoose li.gray {
+    border: 2px solid #d2d2d2;
+    color: #666;
+}
+
+.allGoods .goodsChoose li.red {
+    border: 2px solid #ff7891;
+    color: #ff7891;
+}
+
+.allGoods .goodsChoose li.blue {
+    border: 2px solid #29d4ff;
+    color: #29d4ff;
+}
+
+.tabhover::after {
+    content: "";
+    background-color: #fa9f13;
+    display: block;
+    width: 208px;
+    height: 6px;
+    margin-top: -34px;
+}
+
+.sousuo {
+    float: right;
+    margin-left: 203px;
+    width: 47px;
+    height: 48px;
+    position: relative;
+    right: -235px;
+    top: -174px;
+}
+
+/*====================================发现好店部分========================*/
+.FindGoodShop .top {
+    width: 1020px;
+    height: 680px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 30px;
+    overflow: hidden;
+
+}
+
+.FindGoodShop {
+    position: relative;
+    border-top: 20px solid #f3f3f3;
+    border-bottom: 20px solid #f3f3f3;
+
+}
+
+.FindGoodShop .Shadowlayer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.FindGoodShop .top img {
+    width: 340px;
+    height: 340px;
+
+    margin-right: 0px;
+    float: left;
+}
+
+.FindGoodShop .foot {
+    height: 90px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    margin-left: 30px;
+    line-height: 90px;
+}
+
+.FindGoodShop .foot ul li {
+    float: left;
+    list-style: none;
+}
+
+.FindGoodShop .foot ul li img {
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    margin-right: 15px;
+
+}
+
+.FindGoodShop .foot .footWords {
+    font-size: 40px;
+    color: #181818;
+    margin-left: -99px;
+    z-index: 99
+
+}
+
+.FindGoodShop .FindGoodShopButton {
+    z-index: 99;
+    height: 96px;
+    line-height: 96px;
+    border-radius: 48px;
+    background-color: #fa9c14;
+    padding: 0 34px;
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    margin-top: -90px;
+
+}
+
+.FindGoodShop .FindGoodShopButton div {
+    margin-left: 7px;
+    font-size: 48px;
+    color: #fff;
+    float: left;
+}
+
+.FindGoodShop .FindGoodShopButton .jiantou {
+    margin-left: 34px;
+    font-size: 48px;
+    color: #fff;
+    float: left;
+    position: relative;
+    top: 2px;
+}
+
+.FindGoodShop .FindGoodShopButton div:nth-child(2) {
+    margin-left: 10px;
+}
+
+.FindGoodShop .FindGoodShopButton img {
+    display: inline-block;
+    width: 13px;
+    height: 17px;
+    position: relative;
+    top: -99px;
+    left: 183px;
+}
+
+
+
+.BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorWords div {
+    height: 55px;
+    margin-top: -40px;
+}
+
+.BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorWords .StudioAuthorName {
+    max-width: 450px;
+    text-overflow: ellipsis;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorWords img {
+    float: left;
+    margin-left: 22px;
+}
+
+img[src=''] {
+    display: none;
+}
+
+.yinying {
+    width: 1020px;
+    height: 75%;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 10px;
+}
+
+
+
+.BoutiqueStudio .StuiodList .Studio .StudioAuthor .StudioAuthorIcon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 118px;
+}
+
+
+.NewList .waiting img {
+    padding: 269px 0;
+    position: relative;
+    left: 490px;
+    top: 28px;
+    width: 68px;
+}
+
+/*.main1 {*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*overflow-x: hidden;*/
+/*overflow-y: scroll;*/
+/*box-sizing: border-box;*/
+/*!*padding-top: 211px;*!*/
+/*}*/
+
+/*.mfxd-content {*/
+/*padding-bottom: 22px;*/
+/*}*/
+
+.header1 {
+    margin-top: 38px;
+}
+
+.santu, .ertu, .yitu {
+    margin-bottom: 90px;
+    margin-left: 28px;
+}
+
+.contentab {
+    float: left;
+    vertical-align: top;
+    margin-left: 3px;
+}
+
+.headerTop {
+    width: 100%;
+    height: 72px;
+    background: rgb(178, 178, 178);
+    display: none;
+}
+
+.expression {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+img {
+    margin-right: 70px;
+}
+
+.box {
+    position: relative;
+    border: none;
+}
+
+.returnClick {
+    width: 162px;
+    height: 149px;
+    position: absolute;
+    top: 17px;
+    left: 2px;
+}
+
+.hot .hotList .hotDetail .goodsName img {
+    margin-right: 0px;
+}
+
+.MagicShopwaiting {
+    width: 100%;
+    overflow: hidden;
+    z-index: 9999;
+    position: absolute;
+    top: 40%;
+    display: none;
+
+}
+
+.MagicShopwaiting img {
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    padding: 100px 0;
+    z-index: 9999;
+    position: relative;
+    top: 100px;
+}
+
+.StudioPicListRight .left, .StudioPicListRight .right {
+    width: 336px;
+    height: 336px;
+
+}
+
+ 

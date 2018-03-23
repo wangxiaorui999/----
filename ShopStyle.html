@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>魔法小店</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=1080,target-densitydpi=device-dpi">
+    <link href='css/itemList.css?v=22da' rel='stylesheet' type='text/css' />
+    <link href="css/Common.css" rel="stylesheet" />
+    <script type="text/javascript">
+        ! function (userAgent) {
+            var screen_w = parseInt(window.screen.width),
+                scale = screen_w / 1080;
+            if (/Android (\d+\.\d+)/.test(userAgent)) {
+                var version = parseFloat(RegExp.$1);
+                document.write(version > 2.3 ? '<meta name="viewport" content="width=1080, minimum-scale=' + scale + ', maximum-scale=' + scale + ', target-densitydpi=device-dpi">' : '<meta name="viewport" content="width=1080, target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=1080, minimum-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no, target-densitydpi=device-dpi">');
+            }
+        }(navigator.userAgent);
+    </script>
+    <style>
+        p{
+            font-size:40px;
+            color:#333;
+            max-height: 999999px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="TitleBar">
+        <div class="oTitle">
+            <span>怎么开小店</span>
+            <div class="return">
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="contain" style="padding-top:215px;padding-bottom:30px;">
+            <script>
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                    document.getElementsByClassName("return")[0].className += " ios";
+                } else {
+                    document.getElementsByClassName("TitleBar")[0].style.height = "170px";
+                    document.getElementsByClassName("oTitle")[0].style.top = "0";
+                    document.getElementsByClassName("contain")[0].style.paddingTop = "170px";
+                    document.getElementsByClassName("return")[0].className += " android";
+                }
+            </script>
+            <p style="width:90%;margin:40px auto 20px;">
+                最近很多人都在问小魔，魔法小店到底是什么？我为什么要开魔法小店？
+            </p>
+            <p style="width:90%;margin:20px auto;">
+                首先，魔法小店让你成为了一家店的老板（这不是废话？？）
+            </p>
+            <p style="width:90%;margin:20px auto;">
+                这不是废话，很多人梦寐以求的就是拥有一家自己的店铺，比如小魔我：） 但开店实在太耗费人力物力财力了，而像魔法小店这种轻松开店的模式简直拯救了所有懒癌患者。
+            </p>
+            <p style="width:90%;margin:20px auto;">
+                然后你的小店会是这样的↓↓
+            </p>
+            <div class="Pic" style="width:100%;overflow:hidden;">
+                <img style="width:750px;display:block;margin:0 auto;" src="https://mall-res.manboker.com/newmall/CN/newstudio/MySpacea.jpg" />
+            </div>
+            <p style="width:90%;margin:20px auto;">
+                只需要上传、进货、分享，白花花的银子就轻松入袋，整个流程简洁到互联网小白也不用操心。
+            </p>
+            <p style="width:90%;margin:20px auto;">
+                那，<span style="font-weight:bold;">到底怎么开店？</span>先花1分钟看看我们的教程视频：
+            </p>
+            <div style="width: 100%; overflow: hidden; text-align: center;">
+                <video style="display: block; width: 80%; margin: 0 auto;" preload="auto" controls autobuffer>
+                    <source src="https://mall-res.manboker.com/newmall/CN/newstudio/studio.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+                </video>
+            </div>
+            <p style="width:90%;margin:20px auto;">
+                Tips：
+            </p>
+            <p style="width:90%;margin:20px auto;color:#fa9c14;">
+                ▲下载魔漫相机APP
+            </p>
+            <p style="width:90%;margin:20px auto;color:#fa9c14;">
+                ▲进入【我的画廊】，点击上传“+”号
+            </p>
+            <p style="width:90%;margin:20px auto;color:#fa9c14;">
+                ▲有三种方式可以上传你的作品
+            </p>
+            <p style="width:90%;margin:30px auto;">
+                ①psd上传：<br />登陆魔漫相机官方网站-上传你的原创漫画作品
+            </p>
+            <p style="width:90%;margin:30px auto;">
+                ②选择魔漫模板-选择商品类型-调整图案位置-描述商品信息-作品发布成功-点击作品进入自己的小店-找到喜爱的商品火速分享
+            </p>
+            <p style="width:90%;margin:30px auto;">
+                ③选择你的摄影或绘画作品-调整图案位置-描述商品信息-作品发布成功-点击作品进入自己的小店-找到喜爱的商品火速分享
+            </p>
+            <p style="width:90%;margin:20px auto;">
+                小魔能教你的只有这么多了，剩下的美妙之处自己去开个小店体会吧！
+            </p>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://mall-res.manboker.com/lib/mcJsApi.js?v=23"></script>
+    <!--<script src="config-test.js"></script>-->
+   <script src="./config.js?v=a544"></script>
+    <script src='https://mall-res.manboker.com/lib/Counter.js' defer="defer" onload="goCounter()"></script>
+    <script src="https://mall-res.manboker.com/newmall/tingyun-rum.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/StudioIntro.js"></script>
+    <script>
+        function goCounter() {
+            Counter("如何开店页面浏览");
+        }
+
+    </script>
+</body>
+</html>
+

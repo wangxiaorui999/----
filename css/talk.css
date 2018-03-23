@@ -1,0 +1,208 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+html{
+    height:100%;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-overflow-scrolling:touch;
+}
+body{
+    width: 100%;
+    height:100%;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 28px;
+    font-family:Verdana,arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
+    color: #555;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color :rgba(0, 0, 0, 0);
+    background:#F9FDE3;
+}
+
+.Container {
+    height:100%;
+}
+
+.money {
+    display:none;
+}
+#main{
+    border: 0;
+    font-size: 0;
+    width: 100%;
+    height:100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+    .Container .banner {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 60px;
+        position: relative
+    }
+        .Container .banner img {
+            width: 100%;
+        }
+        .Container .banner p {
+            text-align: center;
+            font-size: 23px;
+            position: absolute;
+            width: 100%;
+            top: 45px;
+            line-height: 35px;
+        }
+
+    .Container .text {
+        width: 100%;
+        text-align: center;
+        margin: -50px auto 70px;
+    }
+        .Container .text p {
+            color: #000000;
+            font-size: 25px;
+            line-height: 40px;
+        }
+
+    .Container .goodsContainer {
+        width: 100%;
+        position:relative;
+    }
+        .Container .goodsContainer .goodsContainer_son {
+            width: 50%;
+            color: #000000;
+            font-size: 25px;
+            text-align: center;
+            display: inline-block;
+            position: relative;            
+        }
+            .Container .goodsContainer .goodsContainer_son img {
+                width: 90%;
+                display: inline-block;
+            }
+            .Container .goodsContainer .goodsContainer_son .goods_name {
+                margin: 10px auto 5px;
+            }
+            .Container .goodsContainer .goodsContainer_son .goods_value {
+                color: #000000;
+                font-size: 20px;
+                margin: 0 auto 5px;
+            }
+            .Container .goodsContainer .goodsContainer_son .goods_purchase {
+                text-align: center;
+                margin: 20px auto 70px;
+                position: relative;
+            }
+                .Container .goodsContainer .goodsContainer_son .goods_purchase img{
+                    width: 45%
+                }
+
+            .Container .goodsContainer .goodsContainer_sonDetail {
+                width: 50%;
+                text-align: center;
+                display: inline-block;
+            }
+                .Container .goodsContainer .goodsContainer_sonDetail img{
+                    width: 90%;
+                    display: inline-block;
+                    margin-bottom: 30%;
+                }
+
+
+.bottom_pic {
+    width: 100%;
+    margin-top: -75px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+    .bottom_pic img{
+        width: 35%;
+        margin-right: 10px;
+        float: right;
+    }
+
+.Container .goodsContainer .goodsContainer_son .headIco {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 35%;
+}
+
+.return {
+    height: auto;
+    width: 17px;
+    position: fixed;
+    top: 5px;
+    left: -10px;
+    z-index: 999;
+    padding: 30px;
+    display:none;
+}
+.return img{
+    width: 65px;
+}
+.Container .goodsContainer .goodsContainer_son .xinqing{
+    width: 60%;
+}
+.goods_purchase span {
+    position: absolute;
+    /*top: 6.5px;*/
+    left: 111px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+.Container #main .specialGoodsContainer {
+    width: 100%;
+    position: relative;
+    margin-bottom: 70px;
+}
+    .Container #main .specialGoodsContainer .specialGoods{
+        display: inline-block;
+        color: #000000;
+        font-size: 25px;
+        width: 55%;
+        
+    }
+        .Container #main .specialGoodsContainer .specialGoods img{
+            width: 100%;
+        }
+        .Container #main .specialGoodsContainer .specialText .goods_name{
+            margin: 20px auto 0px 5px;
+        }
+        .Container #main .specialGoodsContainer .specialText .goods_value{
+            color: #000000;
+            font-size: 20px;
+            margin: 5px auto 10px 40px;
+        }
+        .Container #main .specialGoodsContainer .specialText .goods_purchase{
+            position: relative;
+            text-align: center;
+            width: 60%;
+            margin-left: 8px;
+            color: #000000;
+            font-size: 20px;
+            width: 144px;
+            height: 47px;
+            background-color: rgb(104,148,240);
+        }
+            .Container #main .specialGoodsContainer .specialText .goods_purchase span{
+                position: relative;
+                font-size: 25px;
+                line-height: 45.16px;
+                left: 4px;
+            }
+
+    .Container #main .specialGoodsContainer .specialText{
+        display: inline-block;
+        margin: 16px auto 0;
+        vertical-align: top;
+        color: #000000;
+        font-size: 25px;
+        width: 45%;
+    }
+        .Container #main .specialGoodsContainer .specialText img{
+            width: 72%;
+            margin-left: 33px;
+        }
+

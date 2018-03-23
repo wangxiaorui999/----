@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=1080,target-densitydpi=device-dpi">
+    <link href='css/itemList.css?v=2d2da' rel='stylesheet' type='text/css' />
+    <script type="text/javascript">
+        ! function (userAgent) {
+            var screen_w = parseInt(window.screen.width),
+                scale = screen_w / 1080;
+            if (/Android (\d+\.\d+)/.test(userAgent)) {
+                var version = parseFloat(RegExp.$1);
+                document.write(version > 2.3 ? '<meta name="viewport" content="width=1080, minimum-scale=' + scale + ', maximum-scale=' + scale + ', target-densitydpi=device-dpi">' : '<meta name="viewport" content="width=1080, target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=1080, minimum-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no, target-densitydpi=device-dpi">');
+            }
+        }(navigator.userAgent);
+    </script>
+</head>
+<body>
+    <div class="TitleBar">
+        <div class="oTitle">
+            <span class="DetailTitle"></span>
+            <div class="return">
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="contain" style="padding-top:215px;">
+            <script>
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                    document.getElementsByClassName("return")[0].className += " ios";
+                } else {
+                    document.getElementsByClassName("TitleBar")[0].style.height = "170px";
+                    document.getElementsByClassName("oTitle")[0].style.top = "0";
+                    document.getElementsByClassName("contain")[0].style.paddingTop = "170px";
+                    document.getElementsByClassName("return")[0].className += " android";
+                    document.getElementsByClassName("DetailTitle")[0].style.textAlign = "left";
+                    document.getElementsByClassName("DetailTitle")[0].style.textIndent = "216px";
+                }
+            </script>
+           
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://mall-res.manboker.com/lib/mcJsApi.js?v=23"></script>
+    <!--<script src="config-test.js"></script>-->
+    <script src="./config.js?v=a544"></script>
+    <script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+    <script src="js/items.js?v=2a3"></script>
+    <script src='https://mall-res.manboker.com/lib/Counter.js?a=2' defer="defer" onload="goCounter()"></script>
+    <script src="https://mall-res.manboker.com/newmall/tingyun-rum.js"></script>
+    <script>
+        function goCounter() {
+            var name = getQueryString("name");
+            Counter("新电商-" + name + "浏览");
+        }
+    </script>
+</body>
+</html>
+

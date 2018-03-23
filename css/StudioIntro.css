@@ -1,0 +1,17 @@
+  .SubmitBtn{
+            width:604px;
+            height:128px;
+            position:absolute;
+            left:50%;
+            bottom:105px;
+            margin-left:-302px;
+            background:url("https://mall-res.manboker.com/newmall/CN/newstudio/btn.png");
+            text-align:center;
+            line-height:120px;
+            font-size:52px;
+            color:#000;
+        }
+        .SubmitBtn span{
+            text-shadow:#fff 2px 0 0,#fff 0 2px 0,#fff -2px 0 0,#fff 0 -2px 0;
+            -webkit-text-shadow:#fff 2px 0 0,#fff 0 2px 0,#fff -2px 0 0,#fff 0 -2px 0;
+        }

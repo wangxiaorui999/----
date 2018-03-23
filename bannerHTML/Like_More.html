@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>猜你喜欢</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link href='../css/itemList.css' rel='stylesheet' type='text/css' />
+    <script type="text/javascript">
+        ! function (userAgent) {
+            var screen_w = parseInt(window.screen.width),
+                scale = screen_w / 1080;
+            if (/Android (\d+\.\d+)/.test(userAgent)) {
+                var version = parseFloat(RegExp.$1);
+                document.write(version > 2.3 ? '<meta name="viewport" content="width=1080, minimum-scale=' + scale + ', maximum-scale=' + scale + ', target-densitydpi=device-dpi">' : '<meta name="viewport" content="width=1080, target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=1080, minimum-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no, target-densitydpi=device-dpi">');
+            }
+        }(navigator.userAgent);
+    </script>
+    <style>
+        .contain {
+            overflow: hidden;
+        }
+
+            .contain .pic {
+                box-sizing: border-box;
+            }
+
+                .contain .pic a:nth-child(2) {
+                    margin: 10px auto 10px;
+                }
+
+                .contain .pic a:nth-child(3) {
+                    overflow: hidden;
+                    /*font-size: 0;*/
+                }
+
+                    .contain .pic a:nth-child(3) img {
+                        height: 18px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 8px;
+                    }
+
+                    .contain .pic a:nth-child(3) span {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 20px;
+                    }
+
+                .contain .pic a:nth-child(1) .phone {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+    </style>
+</head>
+<body>
+    <div class="TitleBar">
+        <div class="oTitle">
+            <span class="DetailTitle">猜你喜欢</span>
+            <div class="return">
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="contain" style="padding-bottom:30px;">
+            <script>
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                    document.getElementsByClassName("return")[0].className += " ios";
+                } else {
+                    document.getElementsByClassName("TitleBar")[0].style.height = "170px";
+                    document.getElementsByClassName("oTitle")[0].style.top = "0";
+                    document.getElementsByClassName("contain")[0].style.paddingTop = "170px";
+                    document.getElementsByClassName("return")[0].className += " android";
+                    document.getElementsByClassName("DetailTitle")[0].style.textAlign = "left";
+                    document.getElementsByClassName("DetailTitle")[0].style.textIndent = "216px";
+                }
+            </script>
+            <!--<div id="23728" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/17qinglv.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0060110020001071.jpg">
+                </a>
+                <a href="javascript:void(0);">爱情见证</a>
+                <a href="javascript:void(0);">¥ 169.00</a>
+            </div>
+            <div id="23686" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/03Daye.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0052110020020071.jpg">
+                </a>
+                <a href="javascript:void(0);">治疗好心情</a>
+                <a href="javascript:void(0);">¥ 169.00</a>
+            </div>
+            <div id="11104" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/01renzong.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0012100501032001.png">
+                </a>
+                <a href="javascript:void(0);">女神礼物</a>
+                <a href="javascript:void(0);">¥ 99.00</a>
+            </div>
+            <div id="11107" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/13mote.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0052100501033001.png">
+                </a>
+                <a href="javascript:void(0);">女神礼物</a>
+                <a href="javascript:void(0);">¥ 99.00</a>
+            </div>
+            <div id="41782" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/43qinglv.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0060110020018071.jpg">
+                </a>
+                <a href="javascript:void(0);">惬意生活</a>
+                <a href="javascript:void(0);">¥ 69.00</a>
+            </div>
+            <div id="41770" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/09hezhao.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0060110020017071.jpg">
+                </a>
+                <a href="javascript:void(0);">放飞祝福</a>
+                <a href="javascript:void(0);">¥ 69.00</a>
+            </div>
+            <div id="41362" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/27qinglv.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0060110010128001.png">
+                </a>
+                <a href="javascript:void(0);">海洋馆和你</a>
+                <a href="javascript:void(0);">¥ 169.00</a>
+            </div>
+            <div id="41590" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/14liqi.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0052110010137001.png">
+                </a>
+                <a href="javascript:void(0);">超萌狗狗</a>
+                <a href="javascript:void(0);">¥ 169.00</a>
+            </div>
+            <div id="21883" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/17qinglv.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/00601005011830.png">
+                </a>
+                <a href="javascript:void(0);">我们结婚了</a>
+                <a href="javascript:void(0);">¥ 229.00</a>
+            </div>
+
+            <div id="21880" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/17qinglv.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/00601005011820.png">
+                </a>
+                <a href="javascript:void(0);">浪漫舞蹈</a>
+                <a href="javascript:void(0);">¥ 229.00</a>
+            </div>
+            <div id="44449" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/01renzong.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0052110010173001.jpg">
+                </a>
+                <a href="javascript:void(0);">初雨</a>
+                <a href="javascript:void(0);">¥ 338.00</a>
+            </div>
+
+            <div id="44446" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/32Louis.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0051110010172001.jpg">
+                </a>
+                <a href="javascript:void(0);">对饮江山</a>
+                <a href="javascript:void(0);">¥ 338.00</a>
+            </div>
+            <div id="753" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/19yijiasankou.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0060100470039021.jpg">
+                </a>
+                <a href="javascript:void(0);">海滩</a>
+                <a href="javascript:void(0);">¥ 159.00</a>
+            </div>
+            <div id="754" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/21yijiasankou.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0060100470063021.jpg">
+                </a>
+                <a href="javascript:void(0);">音乐快乐</a>
+                <a href="javascript:void(0);">¥ 159.00</a>
+            </div>
+            <div id="534" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/09hezhao.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0040100490536071.png">
+                </a>
+                <a href="javascript:void(0);">情侣装</a>
+                <a href="javascript:void(0);">¥ 169.00</a>
+            </div>
+            <div id="490" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/02feilipu.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0011100090031071.png">
+                </a>
+                <a href="javascript:void(0);">火力全开</a>
+                <a href="javascript:void(0);">¥ 169.00</a>
+            </div>
+            <div id="7828" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/30nvsheng.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0052100500955543.jpg">
+                </a>
+                <a href="javascript:void(0);">天秤座</a>
+                <a href="javascript:void(0);">¥ 129.00</a>
+            </div>
+            <div id="7831" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/13mote.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0052100500955643.jpg">
+                </a>
+                <a href="javascript:void(0);">天蝎座</a>
+                <a href="javascript:void(0);">¥ 129.00</a>
+            </div>
+            <div id="43861" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/01renzong.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0011210020004071.jpg">
+                </a>
+                <a href="javascript:void(0);">天生丽质</a>
+                <a href="javascript:void(0);">¥ 169.00</a>
+            </div>
+            <div id="43858" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/01renzong.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0011210020003071.jpg">
+                </a>
+                <a href="javascript:void(0);">优雅</a>
+                <a href="javascript:void(0);">¥ 169.00</a>
+            </div>
+            <div id="65842" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/52 nv.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0050110010186054.jpg">
+                </a>
+                <a href="javascript:void(0);">拥抱枫叶</a>
+                <a href="javascript:void(0);">¥ 229.00</a>
+            </div>
+            <div id="65830" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/02feilipu.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0050110010185054.jpg">
+                </a>
+                <a href="javascript:void(0);">拥抱白雪</a>
+                <a href="javascript:void(0);">¥ 229.00</a>
+            </div>
+            <div id="22105" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/18quanjiafu.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0060100501189001.jpg">
+                </a>
+                <a href="javascript:void(0);">阳光和爱</a>
+                <a href="javascript:void(0);">¥ 129.00</a>
+            </div>
+            <div id="22132" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/37boy1.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0050000501198001.jpg">
+                </a>
+                <a href="javascript:void(0);">捉鱼</a>
+                <a href="javascript:void(0);">¥ 129.00</a>
+            </div>
+            <div id="44293" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/54nvtong.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0052210020007071.jpg">
+                </a>
+                <a href="javascript:void(0);">小狐狸</a>
+                <a href="javascript:void(0);">¥ 129.00</a>
+            </div>
+            <div id="44281" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/54nvtong.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0052210020006071.jpg">
+                </a>
+                <a href="javascript:void(0);">甜心</a>
+                <a href="javascript:void(0);">¥ 129.00</a>
+            </div>
+            <div id="41125" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/40ann.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0052110010119001.png">
+                </a>
+                <a href="javascript:void(0);">大提琴</a>
+                <a href="javascript:void(0);">¥ 188.00</a>
+            </div>
+            <div id="41122" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/57mixi.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0052110010118001.png">
+                </a>
+                <a href="javascript:void(0);">悠闲时光</a>
+                <a href="javascript:void(0);">¥ 188.00</a>
+            </div>
+            <div id="42547" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/09hezhao.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0060110010150001.jpg">
+                </a>
+                <a href="javascript:void(0);">打雪仗</a>
+                <a href="javascript:void(0);">¥ 198.00</a>
+            </div>
+            <div id="42544" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/61lovers10.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0060110010149001.jpg">
+                </a>
+                <a href="javascript:void(0);">粉刷浪漫</a>
+                <a href="javascript:void(0);">¥ 198.00</a>
+            </div>
+            <div id="43237" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/38jack.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0051110010153001.jpg">
+                </a>
+                <a href="javascript:void(0);">绅士</a>
+                <a href="javascript:void(0);">¥ 1688.00</a>
+            </div>
+            <div id="43234" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/02feilipu.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0051110010152001.jpg">
+                </a>
+                <a href="javascript:void(0);">将军</a>
+                <a href="javascript:void(0);">¥ 1688.00</a>
+            </div>
+            <div id="44707" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/32Louis.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0051100501267071.jpg">
+                </a>
+                <a href="javascript:void(0);">面包</a>
+                <a href="javascript:void(0);">¥ 169.00</a>
+            </div>
+            <div id="44689" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/14liqi.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0051000501265071.jpg">
+                </a>
+                <a href="javascript:void(0);">奶牛男孩</a>
+                <a href="javascript:void(0);">¥ 169.00</a>
+            </div>
+            <div id="40735" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/13mote.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0052100130602001.png">
+                </a>
+                <a href="javascript:void(0);">优雅公主</a>
+                <a href="javascript:void(0);">¥ 229.00</a>
+            </div>
+            <div id="40732" class="pic">
+                <a href="javascript:void(0);">
+                    <img class="tip lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg" data-original="https://mall-res.manboker.com/newmall/CN/goodsImg/header/02feilipu.png" />
+                    <img class="phone lazy" src="https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg" data-original="https://mall-res.manboker.com/newmall/CN/Activity/Like/0051100470157001.png">
+                </a>
+                <a href="javascript:void(0);">绅士</a>
+                <a href="javascript:void(0);">¥ 229.00</a>
+            </div>-->
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://moman-res-ali.manboker.com/lib/mcJsApi.js?v=021"></script>
+    <script src="https://mall-res.manboker.com/lib/config.js?v=23"></script>
+    <script src='https://mall-res.manboker.com/lib/Counter.js' defer="defer" onload="goCounter()"></script>
+    <script src='https://mall-res.manboker.com/newmall/CN/js/Items/phoneList.js'></script>
+    <script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+    <script src="../js/HomeSwiper.js"></script>
+    <script>
+        function goCounter() {
+            Counter("新电商-猜你喜欢页面浏览");
+        }
+        $(function () {
+            setTimeout(function () {
+                $("img.lazy").lazyload({
+                    placeholder: "https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg",
+                    effect: "fadeIn",
+                    threshold : 200,
+                    container: $(".box"),
+                });
+                $(window).resize();
+            }, 100);
+          
+            for (var i = 0; i < HomeSwiper.Like_More.length; i++) {
+                var html = "";
+                html += '<div id="' + HomeSwiper.Like_More[i].id + '" class="pic">' +
+                         '<a href="javascript:void(0);">' +
+                         ' <img class="tip lazy"  src="' + app.getOptimizedImgUrl("https://mall-res.manboker.com/newmall/DefaultPicture/Defaultdiagram.jpg", 100) + '"    data-original="' + app.getOptimizedImgUrl(HomeSwiper.Like_More[i].src, 100) + '" />' +
+                         '<img class="phone lazy"  src="' + app.getOptimizedImgUrl("https://mall-res.manboker.com/newmall/DefaultPicture/Online-retailers_loading_photoframe.jpg", 350) + '"      data-original="' + app.getOptimizedImgUrl(HomeSwiper.Like_More[i].src1, 350) + '" > </a>' +
+                         ' <a href="javascript:void(0);">' + HomeSwiper.Like_More[i].name + '</a>' +
+                        '  <a href="javascript:void(0);">' + HomeSwiper.Like_More[i].price + '</a> </div>';
+
+                $(".box  .contain").append(html);
+            }
+            $(".pic").on("click", function () {
+                var id = $(this).attr("id");
+
+                mcAPI.openProductDetail(id);
+
+            });
+        });
+    </script>
+</body>
+</html>
+
+

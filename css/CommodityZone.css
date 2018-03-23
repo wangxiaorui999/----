@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+  .CommodityZoneList  .goodsName{
+         font-size: 42px;
+    margin-top: 38px;
+    color: #000;
+    text-align: center;
+    height: 58px;
+        }
+#CommodityZoneBox{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-right: 17px;
+}
+.CommodityZoneBox{
+    width: 100%;
+    padding: 0px 0 30px;
+    background: #fff;
+    font-size: 0;
+    /*overflow-y: scroll;*/
+    /*padding-top: 211px;*/
+}
+.headHot{
+    box-sizing: border-box;
+}
+.ios {
+    background-image: url(//mall-res.manboker.com/newmall/CN/goodsImg/Onlineretailers_back.png);
+}
+.CommodityZoneTitleBar {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    border-bottom: 2px solid #ccc;
+    height: 213px;
+    background-color: #fff;
+}
+.CommodityZoneoTitle {
+    width: 100%;
+    height: 168px;
+    line-height: 168px;
+    position: absolute;
+    left: 0;
+    top: 43px;
+    text-align: center;
+    font-size: 54px;
+    color: #444;
+    background: #fff;
+}
+.CommodityZoneReturn {
+    position: absolute;
+    left: 12px;
+    top: 30px;
+    z-index: 1000;
+    width: 120px;
+    height: 120px;
+}
+
+
+.CommodityZone {
+    width: 100%;
+    background: url("../img/CommodityZoneBg.png") no-repeat;
+}
+
+.CommodityZone .CommodityZoneTitle {
+    width: 100%;
+    height: 166px;
+    font-size: 46px;
+    color: #4e4e4e;
+    line-height: 166px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.CommodityZone .CommodityZoneList {
+    width: 1040px;
+    height: 538px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.CommodityZone .CommodityZoneList .CommodityZoneGoods {
+   display: inline-block;
+    /* vertical-align: top; */
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    flex: 1;
+    padding-top: 24px;
+}
+
+.CommodityZone .CommodityZoneList .CommodityZoneGoods .CommodityZoneGoodsPic .goodsBox {
+    width: 230px;
+    height: 230px;
+    margin: 35px auto;
+}
+
+.CommodityZone .CommodityZoneList .CommodityZoneGoods .CommodityZoneGoodsPic .icon {
+       width: 110px;
+    height: 110px;
+    position: absolute;
+    right: -45px;
+    top: 40px;
+    border-radius: 50%;
+}
+
+.CommodityZone .CommodityZoneList .CommodityZoneGoods .CommodityZoneGoodsTitle {
+    font-size: 36px;
+    margin-top: 6px;
+    color: #999;
+    text-align: center;
+}
+
+.CommodityZone .CommodityZoneList .CommodityZoneGoods .CommodityZoneGoodsPrice {
+  font-size: 42px;
+    color: #ff452c;
+    text-align: center;
+    margin: 6px 0 25px;
+}
+
+.main .MagicShopContent .CommodityZone .CommodityZoneList .twoCommodityZoneGoods {
+    margin-left: 90px;
+    margin-right: 90px;
+    text-align: center;
+}
+
+.CommodityZone .CommodityZoneGoodsViewAll {
+    width: 100%;
+    height: 166px;
+    padding-top: 44px;
+    box-sizing: border-box;
+}
+
+.CommodityZone .CommodityZoneGoodsViewAll .CommodityZoneGoodsBtn {
+    width: 470px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #4e4e4e;
+    color: #ffffff;
+    font-size: 38px;
+    line-height: 80px;
+    text-align: center;
+    margin: 0px auto;
+}

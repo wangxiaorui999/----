@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>魔漫专区</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=1080,target-densitydpi=device-dpi">
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet" />
+    <link href="css/Mofaxdxq.css" rel="stylesheet" />
+    <link href="css/Common.css?v=3" rel="stylesheet" />
+    <link href="css/style.css?v=8d9aag88" rel="stylesheet" />
+    <link href="css/studios.css?v=1ad2w" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/ShopSearch.css?v12w">
+    <link rel="stylesheet" href="css/CommodityZone.css">
+    <style>
+        body{
+            -webkit-overflow-scrolling: touch
+        }
+        .android {
+            background-image: url(//mall-res.manboker.com/newmall/CN/returnA.png);
+        }
+    </style>
+    <script type="text/javascript">
+        ! function (userAgent) {
+            var screen_w = parseInt(window.screen.width),
+                scale = screen_w / 1080;
+            if (/Android (\d+\.\d+)/.test(userAgent)) {
+                var version = parseFloat(RegExp.$1);
+                document.write(version > 2.3 ? '<meta name="viewport" content="width=1080, minimum-scale=' + scale + ', maximum-scale=' + scale + ', target-densitydpi=device-dpi">' : '<meta name="viewport" content="width=1080, target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=1080, minimum-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no, target-densitydpi=device-dpi">');
+            }
+        }(navigator.userAgent);
+    </script>
+</head>
+<body>
+<div class="GoTop goUp" style="display: block;">
+    <img src="https://mall-res.manboker.com/newmall/CN/top.png">
+    <span>顶部</span>
+</div>
+<div id="CommodityZoneBox">
+    <div class="CommodityZoneBox"  style="padding-bottom:30px;"   name="CommodityZoneBox">
+        <div id="box" style="width:100%;overflow:hidden;">
+            <div class="hot part1">
+                <div class="headHot">
+                    <h3>人气热卖</h3>
+                    <div class="MoreBtn" url="bannerHTML/Hot_More.html">
+                        <span>查看更多</span>
+                        <img class="MoreArrow" src="https://mall-res.manboker.com/newmall/CN/more_btn.png" />
+                    </div>
+                </div>
+                <div class="hotList">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="hot part3">
+            <div class="headHot">
+                <h3>新品首发</h3>
+                <div class="MoreBtn" url="bannerHTML/New_More.html">
+                    <span>查看更多</span>
+                    <img class="MoreArrow" src="https://mall-res.manboker.com/newmall/CN/more_btn.png" />
+                </div>
+            </div>
+            <div class="hotList">
+            </div>
+        </div>
+        <div style="width:100%;height:20px;background:#f2f2f2;"></div>
+        <div class="swiper-container swiper-container2">
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-pagination swiper-pagination2"></div>
+        </div>
+        <div style="width:100%;height:20px;background:#f2f2f2;"></div>
+        <div class="hot part4">
+            <div class="headHot">
+                <h3>猜你喜欢</h3>
+                <div class="MoreBtn" url="bannerHTML/Like_More.html">
+                    <span>查看更多</span>
+                    <img class="MoreArrow" src="https://mall-res.manboker.com/newmall/CN/more_btn.png" />
+                </div>
+            </div>
+            <div class="hotList">
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://mall-res.manboker.com/lib/mcJsApi.js?v=88"></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+   <!--<script src="config-test.js"></script>-->
+    <script src="./config.js?v=a544"></script>
+<script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+<script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script src="https://mall-res.manboker.com/lib/loading-fixed.js"></script>
+<script src="http://mall-res.manboker.com/lib/handleUploadImg.js"></script>
+<script src="js/Home.js?v=va1adsaad11s"></script>
+<script src="js/scroll.js"></script>
+<script src="js/mofaxdxq.js?v=asd55"></script>
+<script src="js/Popularhop.js?v12"></script>
+<script src="js/HomeSwiper.js?v=a82"></script>
+<script src='https://mall-res.manboker.com/lib/Counter.js' defer="defer" onload="goCounter()"></script>
+<script src="https://mall-res.manboker.com/newmall/tingyun-rum.js"></script>
+
+<script>
+    function goCounter() {
+        Counter("魔漫图商品专区浏览");
+    }
+    $(function () {
+        Mall.ProductPhotos();
+        var clientTitle = {};
+        console.log(name);
+        clientTitle.htmlTitleSpecials = [{"icon":"", "name": ''}];
+        mcAPI.hasClientTitle(true, JSON.stringify(clientTitle))
+
+
+    })
+
+</script>
+</body>
+</html>
